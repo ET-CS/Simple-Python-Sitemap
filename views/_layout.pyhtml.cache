@@ -1,0 +1,18 @@
+timestamp: 1378768023.77
+
+_extend=_buf.extend;_to_str=to_str;_escape=escape; _extend(('''<!DOCTYPE>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>''', _escape(_to_str(title)), '''</title>
+    <link rel="stylesheet" href="css/reset/_/css/reset.css" />
+    <link rel="stylesheet" href="css/reset/_/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+  <div id="container">
+''', _to_str(_content), '''
+  </div>
+  </body>
+</html>
+\n''', ));

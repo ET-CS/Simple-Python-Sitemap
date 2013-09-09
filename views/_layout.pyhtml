@@ -1,0 +1,16 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>${title}</title>
+    <link rel="stylesheet" href="css/reset/_/css/reset.css" />
+    <link rel="stylesheet" href="css/reset/_/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+  <div id="container">
+#{_content}
+  </div>
+  </body>
+</html>
+

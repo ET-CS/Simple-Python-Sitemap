@@ -1,0 +1,12 @@
+<?#py _context['title'] = 'Tenjin: Layout Template Example' ?>
+<h1>${title}</h1>
+<table>
+<?py i = 0 ?>
+<?py for item in items: ?>
+<?py     i += 1 ?>
+<?py     color = i % 2 == 0 and '#FFCCCC' or '#CCCCFF' ?>
+  <tr bgcolor="#{color}">
+    <td><a href="http://${item[0]}"> ${item[1]}</a> - ${item[2]}</td>
+  </tr>
+<?py #endfor ?>
+</table>
