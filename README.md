@@ -7,11 +7,12 @@ Simple one page python based Sitemap. Designed for mod_python.
 
 ## Prerequisities ##
 
-1. Tenjin. - used as template engine.
+1. Tenjin. - used as template engine. (easy_install Tenjin)
 
 ## Installation ##
 
-1. Clone this repo and set your apache using mod_python to index.py
+1. Clone this repo: git clone git@github.com:ET-CS/Simple-Python-Sitemap.git
+   and set your apache using mod_python to index.py
 2. Copy setting.py.demo to settings.py - this is your private settings file 
 3. visit your new python based Sitemap
 
