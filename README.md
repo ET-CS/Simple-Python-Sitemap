@@ -54,7 +54,9 @@ Edit your settings.py with your list of websites:
     }
 
 #### Thumbnails ####
-The Sitemap will search for file named as the url (without http://) with png extension inside /thumbs folder.
+The Sitemap will search for each item inside the 'thumbs' folder
+for filename that match the item url (without the http://).
+The thumbnail should be compressed with png extension at 150x100 resolution.
 
 for example: 
 
