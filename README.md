@@ -17,11 +17,25 @@ Simple one page python based Sitemap. Designed for mod_python.
 
 ### mod_python ###
 
-Add to your VirtualHost in apache:
+Add your VirtualHost in apache:
 
-    AddHandler mod_python .py
-    PythonHandler mod_python.publisher | .py
-    PythonDebug On
+    <VirtualHost *:80>
+        ServerName www.example.com
+        DocumentRoot "/path/to/sitemap"
+        DirectoryIndex index.py
+        #ErrorLog "/var/log/sitemap_error_log"
+        #CustomLog "/var/log/sitemap_access_log" common
+
+        <Directory "/path/to/sitemap">
+            Options -Indexes FollowSymLinks MultiViews
+            AllowOverride None
+            Order allow,deny
+            Allow from all
+            AddHandler mod_python .py
+            PythonHandler mod_python.publisher | .py
+            PythonDebug On
+        </Directory>
+    </VirtualHost>
 
 ## Configure ##
 
@@ -45,3 +59,6 @@ made by [ET][ET]
 
 [ET]: http://www.etcs.me
 [git]: git@github.com:ET-CS/Simple-Python-Sitemap.git
+
+
+
