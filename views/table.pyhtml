@@ -8,9 +8,10 @@
   <tr bgcolor="#{color}">
     <td>
         <a href="${item[0]}">
-            <?py if item[3]: ?><img src="${item[3]}"><?py #endif ?>
-            ${item[1]}
-        </a> - ${item[2]}
+        <?py if item[3]: ?><img src="${item[3]}"><?py #endif ?></a>
+        <span>
+            <a href="${item[0]}">${item[1]}</a> - ${item[2]}
+        </span>
     </td>
   </tr>
 <?py #endfor ?>

@@ -15,4 +15,15 @@ td {
     padding: 35px;
     float: right;
     display: inline;
+    line-height: 100px;
+}
+
+td span {
+    padding: 30px;
+}
+
+td img {
+    border: 1px solid black;
+    height: 100px;
+    width: 150px;
 }
