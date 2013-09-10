@@ -1,3 +1,4 @@
+skin = 'basic'
 context = { 
     'title': 'My Sitemap',
     'items': [
