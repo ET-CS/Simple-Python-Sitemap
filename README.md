@@ -57,7 +57,8 @@ Edit your settings.py with your list of websites:
 The Sitemap will search for file named as the url (without http://) with png extension inside /thumbs folder.
 
 for example: 
-the file /thumbs/www.etcs.me.png - will be the thumbnail for 'www.etcs.me' item.
+    
+    the file /thumbs/www.etcs.me.png - will be the thumbnail for 'www.etcs.me' item.
 
 
 made by [ET][ET]
