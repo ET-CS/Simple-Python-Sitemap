@@ -3,11 +3,13 @@ Simple-Python-Sitemap
 
 Simple one page python based Sitemap. Designed for mod_python.
 
-== Prerequisities
+    This sitemap is still in early development and have no css design
+
+## Prerequisities ##
 
 1. Tenjin. - used as template engine.
 
-== Installation ==
+## Installation ##
 
 1. Clone this repo and set your apache using mod_python to index.py
 2. Copy setting.py.demo to settings.py - this is your private settings file 
