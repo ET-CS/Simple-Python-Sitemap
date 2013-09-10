@@ -44,12 +44,12 @@ Edit your settings.py with your list of websites:
     context = { 
         'title': 'My Sitemap',
         'items': [
-            [ 'www.example.com', 'Link 1', 'My first website.' ],
-            [ 'www.example.com', 'Link 2', 'My second website.' ],
-            [ 'www.example.com', 'Link 3', 'My third website.' ],
-            [ 'www.example.com', 'Link 4', 'Another website.' ],
-            [ 'www.example.com', 'Link 5', 'Yet another website.' ],
-            [ 'www.example.com', 'Link 6', 'My last website.' ]
+            [ 'http://www.example.com', 'Link 1', 'My first website.' ],
+            [ 'http://www.example.com', 'Link 2', 'My second website.' ],
+            [ 'http://www.example.com', 'Link 3', 'My third website.' ],
+            [ 'http://www.example.com', 'Link 4', 'Another website.' ],
+            [ 'http://www.example.com', 'Link 5', 'Yet another website.' ],
+            [ 'http://www.example.com', 'Link 6', 'My last website.' ]
         ]
     }
 
