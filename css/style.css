@@ -32,4 +32,13 @@ td img {
     border: 1px solid black;
     height: 100px;
     width: 150px;
+    -webkit-transform: scale(.9);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 500ms;
+}
+
+td img:hover {
+    -webkit-transform: scale(1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 500ms;
 }
