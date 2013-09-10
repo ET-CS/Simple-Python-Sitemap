@@ -1,4 +1,4 @@
-timestamp: 1378770325.75
+timestamp: 1378778322.14
 
 _extend=_buf.extend;_to_str=to_str;_escape=escape; _extend(('''<?#py _context[\'title\'] = \'Tenjin: Layout Template Example\' ?>
 <h1>''', _escape(_to_str(title)), '''</h1>
@@ -8,7 +8,13 @@ for item in items:
     i += 1
     color = i % 2 == 0 and '#FFCCCC' or '#CCCCFF'
     _extend(('''  <tr bgcolor="''', _to_str(color), '''">
-    <td><a href="http://''', _escape(_to_str(item[0])), '''"> ''', _escape(_to_str(item[1])), '''</a> - ''', _escape(_to_str(item[2])), '''</td>
+    <td>
+        <a href="''', _escape(_to_str(item[0])), '''">\n''', ));
+    if item[3]:
+        _extend(('''<img src="''', _escape(_to_str(item[3])), '''">''', ));    #endif
+    _extend(('''            ''', _escape(_to_str(item[1])), '''
+        </a> - ''', _escape(_to_str(item[2])), '''
+    </td>
   </tr>\n''', ));
 #endfor
 _extend(('''</table>\n''', ));
