@@ -1,17 +1,13 @@
 ## import modules and helper functions
 import os
-import os.path
+import os.path; path = os.path.dirname(os.path.abspath(__file__))
 import tenjin
 #tenjin.set_template_encoding('cp932')   # template encoding
 from tenjin.helpers import *
 import settings
 
-def thumbnailExist(filename):
-    pass
-
-def index(req):
-    path = os.path.dirname(os.path.abspath(__file__))
-    engine = tenjin.Engine(path=[path+'/views'], layout='_layout.pyhtml')
+# Check if thumbnails available
+def checkThumbnails():
     for key in settings.context['items']:
         filename = key[0].split('//')[1]+'.png'
         thumbnail = 'thumbs/'+filename
@@ -20,5 +16,9 @@ def index(req):
         else:
             key.append('')
 
+# Everything starts here...
+def index(req):
+    engine = tenjin.Engine(path=[path+'/views'], layout='_layout.pyhtml')
+    checkThumbnails()
     output = engine.render('table.pyhtml', settings.context)
     return output
