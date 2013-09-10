@@ -11,7 +11,7 @@ def thumbnailExist(filename):
 
 def index(req):
     path = os.path.dirname(os.path.abspath(__file__))
-    engine = tenjin.Engine(path=[path+'/views'], layout=settings.skin+'/_layout.pyhtml')
+    engine = tenjin.Engine(path=[path+'/views'], layout='_layout.pyhtml')
     for key in settings.context['items']:
         filename = key[0].split('//')[1]+'.png'
         thumbnail = 'thumbs/'+filename
@@ -20,5 +20,5 @@ def index(req):
         else:
             key.append('')
 
-    output = engine.render(settings.skin+'/table.pyhtml', settings.context)
+    output = engine.render('table.pyhtml', settings.context)
     return output
