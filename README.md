@@ -11,7 +11,7 @@ Simple one page python based Sitemap. Designed for mod_python.
 
 ## Installation ##
 
-1. Clone this repo: git clone git@github.com:ET-CS/Simple-Python-Sitemap.git
+1. Clone this repo: git clone [git][git@github.com:ET-CS/Simple-Python-Sitemap.git]
    and set your apache using mod_python to index.py
 2. Copy setting.py.demo to settings.py - this is your private settings file 
 3. visit your new python based Sitemap
@@ -19,3 +19,4 @@ Simple one page python based Sitemap. Designed for mod_python.
 made by [ET][ET]
 
 [ET]: http://www.etcs.me
+[git]: git@github.com:ET-CS/Simple-Python-Sitemap.git
