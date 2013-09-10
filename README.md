@@ -58,10 +58,12 @@ The Sitemap will search for file named as the url (without http://) with png ext
 
 for example: 
 
-the file /thumbs/www.etcs.me.png - will be the thumbnail for 'www.etcs.me' item.
+the file /thumbs/www.example.com.png - will be the thumbnail for the 'http://www.example.com' item.
 
 
+## License ##
 
+Licensed with GPL3.
 
 made by [ET][ET]
 
