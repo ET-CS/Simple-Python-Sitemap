@@ -21,8 +21,6 @@ Add to your VirtualHost in apache:
 
     AddHandler mod_python .py
     PythonHandler mod_python.publisher | .py
-    AddHandler mod_python .psp .psp_
-    PythonHandler mod_python.psp | .psp .psp_
     PythonDebug On
 
 ## Configure ##
