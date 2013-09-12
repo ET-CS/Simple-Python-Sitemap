@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="/favicon.ico">
-            
     <?py include('_head.pyhtml') ?>
   </head>
   <body>
+  <a href="https://github.com/ET-CS/Simple-Python-Sitemap"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
   <div id="container">
 #{_content}
   </div>
