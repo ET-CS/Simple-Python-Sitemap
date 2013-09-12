@@ -53,6 +53,10 @@ Edit your settings.py with your list of websites:
         ]
     }
 
+#### Head ###
+Copy views/_head.pyhtml.example to _head.pyhtml. this will be your head section
+and will not be updated in git pull.
+
 #### Thumbnails ####
 The Sitemap will search for each item inside the 'thumbs' folder
 for filename that match the item url (without the http://).
