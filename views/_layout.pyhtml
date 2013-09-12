@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+    <meta content='ETCS.ME' name='generator'/>
     <?py include('_head.pyhtml') ?>
   </head>
   <body>
@@ -17,4 +21,5 @@
   </div>
   </body>
 </html>
+
 
