@@ -13,7 +13,7 @@ import settings
 def checkThumbnails():
     for key in settings.context['items']:
         thumbnail = 'thumbs/'+key[0].split('//')[1]+'.png'
-        if os.path.isfile(path+'/thumbs/'+filename):
+        if os.path.isfile(path+'/'+thumbnail):
             key.append(thumbnail)
         else:
             key.append('')
