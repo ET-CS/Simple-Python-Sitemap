@@ -1,5 +1,4 @@
 body {
-    font-family: 'Cinzel Decorative', cursive;
 }
 
 #container { 
@@ -8,6 +7,7 @@ body {
 }
 
 h1 {
+    font-family: 'Cinzel Decorative', cursive;
     font-weight: bold;
     font-size: 3em;
     padding: 30px;
