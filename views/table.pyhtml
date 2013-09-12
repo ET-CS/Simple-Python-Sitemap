@@ -1,6 +1,21 @@
 <?#py _context['title'] = 'Tenjin: Layout Template Example' ?>
 <h1>${title}</h1>
-<table>
+<nav>
+    <section id="items">
+        <ul>
+            <?py for item in items: ?>
+                <li>
+                    <a href="${item[0]}">${item[1]}</a><br/>
+                    <a href="${item[0]}">
+                        <?py if item[3]: ?><img src="${item[3]}"><?py #endif ?>
+                    </a>
+                    <br/>
+                    <div id="desc">${item[2]}</div>
+                </li>
+            <?py #endfor ?>
+        </ul>
+    </section>
+<table style="display:none;">
 <?py i = 0 ?>
 <?py for item in items: ?>
 <?py     i += 1 ?>
@@ -8,7 +23,6 @@
   <tr bgcolor="#{color}">
     <td>
         <span>
-
             <a href="${item[0]}">${item[1]}</a> - ${item[2]}
         </span>
         <a href="${item[0]}">
@@ -18,3 +32,4 @@
   </tr>
 <?py #endfor ?>
 </table>
+</nav>
