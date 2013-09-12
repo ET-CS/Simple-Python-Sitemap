@@ -20,21 +20,4 @@
             <?py #endfor ?>
         </ul>
     </section>
-<table style="display:none;">
-<?py i = 0 ?>
-<?py for item in items: ?>
-<?py     i += 1 ?>
-<?py     color = i % 2 == 0 and '#FFCCCC' or '#CCCCFF' ?>
-  <tr bgcolor="#{color}">
-    <td>
-        <span>
-            <a href="${item[0]}">${item[1]}</a> - ${item[2]}
-        </span>
-        <a href="${item[0]}">
-        <?py if item[3]: ?><img src="${item[3]}"><?py #endif ?></a>
-
-    </td>
-  </tr>
-<?py #endfor ?>
-</table>
 </nav>
