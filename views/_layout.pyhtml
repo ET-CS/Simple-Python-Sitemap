@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/reset/_/css/style.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+            
     <?py include('_head.pyhtml') ?>
   </head>
   <body>
