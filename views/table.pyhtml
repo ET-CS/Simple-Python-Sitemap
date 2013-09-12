@@ -5,12 +5,16 @@
         <ul>
             <?py for item in items: ?>
                 <li>
-                    <a href="${item[0]}">${item[1]}</a><br/>
-                    <a href="${item[0]}">
-                        <?py if item[3]: ?><img src="${item[3]}"><?py #endif ?>
-                    </a>
-                    <br/>
-                    <div id="desc">${item[2]}</div>
+                    <div class="title"><a href="${item[0]}">${item[1]}</a></div>
+
+                    <?py if item[3]: ?>
+                        <a href="${item[0]}">
+                            <img src="${item[3]}">
+                        </a>
+                        <br/>
+                    <?py #endif ?>
+
+                    <div class="desc">${item[2]}</div>
                 </li>
             <?py #endfor ?>
         </ul>
