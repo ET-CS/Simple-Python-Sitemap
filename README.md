@@ -71,6 +71,9 @@ the file /thumbs/www.example.com.png - will be the thumbnail for the 'http://www
 
 Licensed with GPL3.
 
+Favicon from http://www.freefavicon.com/
+
+
 made by [ET][ET]
 
 [ET]: http://www.etcs.me
