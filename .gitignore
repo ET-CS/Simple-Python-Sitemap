@@ -35,5 +35,3 @@ nosetests.xml
 .project
 .pydevproject
 
-# private settings file
-settings.py
