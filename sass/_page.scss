@@ -1,0 +1,9 @@
+body {
+    background-color: $bg-color;
+    // Center align document
+    text-align: center;
+    // reset padding & margin
+    padding: 0; margin: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}

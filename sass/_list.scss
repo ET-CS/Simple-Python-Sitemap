@@ -1,0 +1,58 @@
+@import "susy";
+//@import "compass/reset";
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  container: 1120px,
+  global-box-sizing: border-box
+);
+@include border-box-sizing;
+
+// Variables
+//
+// 
+// margin between items
+$item-margin: 15px;
+// item border radius size
+$item-border-radius: 8px;
+$item-a-color: darkblue;
+$item-a-color-hover: red;
+$item-a-color-visited: $item-a-color;
+
+@mixin item-style() {
+    margin: $item-margin;
+    background: $item-bg-color;
+    border: $item-border;
+    border-radius: $item-border-radius;
+    .title {
+        text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.75);
+	padding-top: 15px;
+	a {
+	    text-decoration: none;
+	    font-weight: bolder;
+	    color: $item-a-color;
+	}
+	a:hover {
+	    color: $item-a-color-hover;
+	}
+	a:visited {
+	    color: $item-a-color-visited;
+	}
+    }
+    .desc {
+	font-size: .85em;
+	padding: 15px;
+    }
+    img {
+	padding: 13px 0px;
+    }
+}
+
+.items-container {
+    margin-bottom: 55px;
+}
+
+.item {
+    @include item-style();
+}
