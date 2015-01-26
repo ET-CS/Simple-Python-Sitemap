@@ -1,16 +1,16 @@
 <h1>${title}</h1>
-<div id="container" class="js-isotope items-container"
+<div id="container" class="items-container"
     data-isotope-options='{ "itemSelector": ".item", "masonryHorizontal": { "columnWidth": 200 } }'>
     <?py for item in items: ?>
-	<div class="item">
-	    <div class="title"><a href="${item[0]}">${item[1]}</a></div>
-            <?py if item[3]: ?>
-                <a href="${item[0]}">
-                    <img src="${item[3]}">
-                </a>
-            <?py #endif ?>
-            <div class="desc">${item[2]}</div>
-        </div>
+        <div class="item">
+	    <a href="${item[0]}">
+		<div class="title">${item[1]}</div>
+        	<?py if item[3]: ?>
+        	    <img src="${item[3]}">
+        	<?py #endif ?>
+        	<div class="desc">${item[2]}</div>
+	    </a>
+	</div>
     <?py #endfor ?>
 </div>
 <script>

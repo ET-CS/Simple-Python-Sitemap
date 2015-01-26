@@ -21,24 +21,26 @@ $item-a-color-hover: red;
 $item-a-color-visited: $item-a-color;
 
 @mixin item-style() {
+    cursor: pointer;
     margin: $item-margin;
     background: $item-bg-color;
     border: $item-border;
     border-radius: $item-border-radius;
+    a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: $item-a-color;
+    }
+    a:hover {
+        color: $item-a-color-hover;
+    }
+    a:visited {
+        color: $item-a-color-visited;
+    }
     .title {
         text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.75);
 	padding-top: 15px;
-	a {
-	    text-decoration: none;
-	    font-weight: bolder;
-	    color: $item-a-color;
-	}
-	a:hover {
-	    color: $item-a-color-hover;
-	}
-	a:visited {
-	    color: $item-a-color-visited;
-	}
+	
     }
     .desc {
 	font-size: .85em;
@@ -46,6 +48,11 @@ $item-a-color-visited: $item-a-color;
     }
     img {
 	padding: 13px 0px;
+    }
+    &:hover {
+	a {
+	    color: red;
+	}
     }
 }
 
