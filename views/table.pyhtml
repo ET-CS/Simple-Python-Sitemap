@@ -1,5 +1,5 @@
 <h1>${title}</h1>
-<q>Two roads diverged in a wood and I - I took the one less traveled by, and that has made all the difference.</q> ~Robert Frost
+
 <div id="container" class="items-container"
     data-isotope-options='{ "itemSelector": ".item", "masonryHorizontal": { "columnWidth": 200 } }'>
     <?py for item in items: ?>
@@ -21,3 +21,6 @@
       gutter: 0,
     });
 </script>
+<div class="qoute">
+    <q>Two roads diverged in a wood and I - I took the one less traveled by, and that has made all the difference.</q> ~Robert Frost
+</div>
